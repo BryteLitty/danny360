@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Button } from '../ui/button'
 
+// import logo from '../../assets/images/360logo.png';
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)

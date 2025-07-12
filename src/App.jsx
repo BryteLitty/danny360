@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/sections/Header'
 import Hero from './components/sections/Hero'
 import About from './components/sections/About'
@@ -6,6 +7,7 @@ import Vision from './components/sections/Vision'
 import Contact from './components/sections/Contact'
 import Footer from './components/sections/Footer'
 import Modal from './components/common/Modal'
+import EasyFi from './pages/EasyFi'
 import { useState } from 'react'
 
 function App() {
@@ -15,8 +17,8 @@ function App() {
     setSelectedService(null)
   }
 
-  return (
-    <div className="min-h-screen">
+  const MainLayout = () => (
+    <>
       <Header />
       <Hero />
       
@@ -51,7 +53,18 @@ function App() {
           onClose={closeModal}
         />
       )}
-    </div>
+    </>
+  )
+
+  return (
+    <Router>
+      <div className="min-h-screen">
+        <Routes>
+          <Route path="/" element={<MainLayout />} />
+          <Route path="/easy-fi" element={<EasyFi />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 

@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { services } from '@/data/services'
+import { useNavigate } from 'react-router-dom'
 import { 
   FaGlobe, 
   FaLink, 
@@ -23,10 +24,12 @@ const iconMap = {
 }
 
 const Services = ({ onServiceClick }) => {
+  const navigate = useNavigate()
+
   const handleServiceClick = (service) => {
     if (service.isExternal) {
-      // Open external link in new tab
-      window.open(service.externalUrl, '_blank')
+      // Navigate to Easy-Fi page
+      navigate(service.externalUrl)
     } else {
       // Open modal
       onServiceClick(service)
