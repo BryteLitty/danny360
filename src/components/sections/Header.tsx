@@ -16,7 +16,7 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
@@ -44,7 +44,7 @@ const Header = () => {
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection('home')}
-              className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+              className="text-2xl font-bold bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
             >
               Danny360
             </button>
@@ -56,7 +56,7 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`px-3 py-2 text-sm font-medium transition-colors rounded-md hover:bg-orange-500/20 ${
+                className={`px-3 py-2 text-sm font-medium transition-colors rounded-md hover:bg-red-500/20 ${
                   isScrolled 
                     ? 'text-gray-200 hover:text-white' 
                     : 'text-gray-300 hover:text-white'
@@ -71,7 +71,7 @@ const Header = () => {
           <div className="hidden md:flex">
             <Button
               onClick={() => scrollToSection('contact')}
-              className="bg-orange-600 hover:bg-orange-500 text-white px-6 py-2 rounded-lg text-sm font-bold transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-orange-500 hover:border-orange-400"
+              className="bg-red-600 hover:bg-red-500 text-white px-6 py-2 rounded-lg text-sm font-bold transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-red-500 hover:border-red-400"
             >
               Get Started
             </Button>
@@ -83,8 +83,8 @@ const Header = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`p-2 rounded-md transition-colors ${
                 isScrolled 
-                  ? 'text-gray-200 hover:text-white hover:bg-orange-500/20' 
-                  : 'text-gray-300 hover:text-white hover:bg-orange-500/20'
+                  ? 'text-gray-200 hover:text-white hover:bg-red-500/20' 
+                  : 'text-gray-300 hover:text-white hover:bg-red-500/20'
               }`}
             >
               <span className="sr-only">Open main menu</span>
@@ -108,7 +108,7 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left px-3 py-2 text-base font-medium text-gray-200 hover:text-white hover:bg-orange-500/20 rounded-md transition-colors"
+                className="block w-full text-left px-3 py-2 text-base font-medium text-gray-200 hover:text-white hover:bg-red-500/20 rounded-md transition-colors"
               >
                 {item.label}
               </button>
@@ -116,7 +116,7 @@ const Header = () => {
             <div className="pt-2">
               <Button
                 onClick={() => scrollToSection('contact')}
-                className="w-full bg-orange-600 hover:bg-orange-500 text-white px-6 py-2 rounded-lg text-sm font-bold transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-orange-500 hover:border-orange-400"
+                className="w-full bg-red-600 hover:bg-red-500 text-white px-6 py-2 rounded-lg text-sm font-bold transition-all duration-200 shadow-lg hover:shadow-xl border-2 border-red-500 hover:border-red-400"
               >
                 Get Started
               </Button>

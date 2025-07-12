@@ -6,7 +6,7 @@ const Vision = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our Vision
           </h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-red-500 mx-auto mb-8"></div>
         </div>
         
         <div className="space-y-12">
@@ -27,9 +27,9 @@ const Vision = () => {
           
           {/* Key Benefits */}
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-black p-6 rounded-xl shadow-[0_0_20px_rgba(251,146,60,0.3)] hover:shadow-[0_0_30px_rgba(251,146,60,0.5)] border border-orange-500/20 hover:border-orange-500/40 transition-all duration-300">
+            <div className="bg-black p-6 rounded-xl shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_30px_rgba(220,38,38,0.5)] border border-red-500/20 hover:border-red-500/40 transition-all duration-300">
               <div className="flex items-start space-x-4">
-                <div className="bg-orange-600 p-3 rounded-lg">
+                <div className="bg-red-600 p-3 rounded-lg">
                   <span className="text-2xl">⚡</span>
                 </div>
                 <div>
@@ -44,9 +44,9 @@ const Vision = () => {
               </div>
             </div>
             
-            <div className="bg-black p-6 rounded-xl shadow-[0_0_20px_rgba(251,146,60,0.3)] hover:shadow-[0_0_30px_rgba(251,146,60,0.5)] border border-orange-500/20 hover:border-orange-500/40 transition-all duration-300">
+            <div className="bg-black p-6 rounded-xl shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_30px_rgba(220,38,38,0.5)] border border-red-500/20 hover:border-red-500/40 transition-all duration-300">
               <div className="flex items-start space-x-4">
-                <div className="bg-orange-600 p-3 rounded-lg">
+                <div className="bg-red-600 p-3 rounded-lg">
                   <span className="text-2xl">🤝</span>
                 </div>
                 <div>

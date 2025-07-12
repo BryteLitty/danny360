@@ -47,7 +47,7 @@ const Services: React.FC<ServicesProps> = ({ onServiceClick }) => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our Services
           </h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-red-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Discover our comprehensive suite of services designed to meet all your needs. 
             Click on any service to learn more about what we offer.
@@ -58,14 +58,14 @@ const Services: React.FC<ServicesProps> = ({ onServiceClick }) => {
           {services.map((service) => (
             <Card 
               key={service.id} 
-              className="group cursor-pointer transform transition-all duration-300 hover:scale-105 bg-black shadow-[0_0_20px_rgba(251,146,60,0.3)] hover:shadow-[0_0_30px_rgba(251,146,60,0.5)] border border-orange-500/20 hover:border-orange-500/40"
+              className="group cursor-pointer transform transition-all duration-300 hover:scale-105 bg-black shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_30px_rgba(220,38,38,0.5)] border border-red-500/20 hover:border-red-500/40"
               onClick={() => handleServiceClick(service)}
             >
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full border-2 border-orange-500 flex items-center justify-center text-orange-500 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:border-orange-400 group-hover:text-orange-400 p-4">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full border-2 border-red-500 flex items-center justify-center text-red-500 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:border-red-400 group-hover:text-red-400 p-4">
                   {iconMap[service.icon]}
                 </div>
-                <CardTitle className="text-xl font-bold text-white group-hover:text-orange-400 transition-colors duration-300">
+                <CardTitle className="text-xl font-bold text-white group-hover:text-red-400 transition-colors duration-300">
                   {service.name}
                 </CardTitle>
               </CardHeader>
@@ -78,7 +78,7 @@ const Services: React.FC<ServicesProps> = ({ onServiceClick }) => {
                 <Button 
                   variant="outline" 
                   size="sm"
-                  className="w-full bg-transparent border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all duration-300 shadow-[0_0_15px_rgba(251,146,60,0.3)] hover:shadow-[0_0_25px_rgba(251,146,60,0.6)] backdrop-blur-sm"
+                  className="w-full bg-transparent border-2 border-red-500 text-red-500 hover:bg-red-500 hover:text-white hover:border-red-500 transition-all duration-300 shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:shadow-[0_0_25px_rgba(220,38,38,0.6)] backdrop-blur-sm"
                 >
                   {service.isExternal ? 'Visit Site' : 'Learn More'}
                   {service.isExternal ? (
@@ -98,7 +98,7 @@ const Services: React.FC<ServicesProps> = ({ onServiceClick }) => {
           </p>
           <Button 
             size="lg"
-            className="bg-orange-600 hover:bg-orange-500 text-white px-8 py-4 text-lg font-bold transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl border-2 border-orange-500 hover:border-orange-400"
+            className="bg-red-600 hover:bg-red-500 text-white px-8 py-4 text-lg font-bold transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl border-2 border-red-500 hover:border-red-400"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Contact Us Today

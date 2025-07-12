@@ -77,9 +77,9 @@ export const services: Service[] = [
 ]
 
 export const brandColors: BrandColors = {
-  primary: '#f97316', // Orange
+  primary: '#dc2626', // Wine/Red
   secondary: '#000000', // Black
-  accent: '#f97316', // Orange (for glows and accents)
+  accent: '#dc2626', // Wine/Red (for glows and accents)
   neutral: '#ffffff', // White
   dark: '#030712' // Very dark gray/black for subtle variations
 } 

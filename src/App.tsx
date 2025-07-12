@@ -27,7 +27,7 @@ function App() {
       <div className="relative py-8 bg-black">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-full max-w-4xl mx-auto px-4">
-            <div className="h-px bg-gradient-to-r from-transparent via-orange-500 to-transparent shadow-[0_0_10px_rgba(251,146,60,0.3)]"></div>
+            <div className="h-px bg-gradient-to-r from-transparent via-red-500 to-transparent shadow-[0_0_10px_rgba(220,38,38,0.3)]"></div>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ function App() {
       <div className="relative py-8 bg-black">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-full max-w-4xl mx-auto px-4">
-            <div className="h-px bg-gradient-to-r from-transparent via-orange-500 to-transparent shadow-[0_0_10px_rgba(251,146,60,0.3)]"></div>
+            <div className="h-px bg-gradient-to-r from-transparent via-red-500 to-transparent shadow-[0_0_10px_rgba(220,38,38,0.3)]"></div>
           </div>
         </div>
       </div>

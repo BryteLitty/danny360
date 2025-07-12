@@ -8,7 +8,7 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             About Danny360
           </h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-red-500 mx-auto mb-8"></div>
         </div>
         
         <div className="space-y-8">
@@ -27,8 +27,8 @@ const About = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mt-16">
-            <div className="text-center p-6 bg-black rounded-lg shadow-[0_0_20px_rgba(251,146,60,0.3)] hover:shadow-[0_0_30px_rgba(251,146,60,0.5)] transition-all duration-300 border border-orange-500/20 hover:border-orange-500/40">
-              <div className="text-4xl mb-4 text-orange-500">
+            <div className="text-center p-6 bg-black rounded-lg shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_30px_rgba(220,38,38,0.5)] transition-all duration-300 border border-red-500/20 hover:border-red-500/40">
+              <div className="text-4xl mb-4 text-red-500">
                 <FaBullseye className="w-12 h-12 mx-auto" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Our Mission</h3>
@@ -37,8 +37,8 @@ const About = () => {
               </p>
             </div>
             
-            <div className="text-center p-6 bg-black rounded-lg shadow-[0_0_20px_rgba(251,146,60,0.3)] hover:shadow-[0_0_30px_rgba(251,146,60,0.5)] transition-all duration-300 border border-orange-500/20 hover:border-orange-500/40">
-              <div className="text-4xl mb-4 text-orange-500">
+            <div className="text-center p-6 bg-black rounded-lg shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_30px_rgba(220,38,38,0.5)] transition-all duration-300 border border-red-500/20 hover:border-red-500/40">
+              <div className="text-4xl mb-4 text-red-500">
                 <FaStar className="w-12 h-12 mx-auto" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Our Vision</h3>
@@ -47,8 +47,8 @@ const About = () => {
               </p>
             </div>
             
-            <div className="text-center p-6 bg-black rounded-lg shadow-[0_0_20px_rgba(251,146,60,0.3)] hover:shadow-[0_0_30px_rgba(251,146,60,0.5)] transition-all duration-300 border border-orange-500/20 hover:border-orange-500/40">
-              <div className="text-4xl mb-4 text-orange-500">
+            <div className="text-center p-6 bg-black rounded-lg shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_30px_rgba(220,38,38,0.5)] transition-all duration-300 border border-red-500/20 hover:border-red-500/40">
+              <div className="text-4xl mb-4 text-red-500">
                 <FaLightbulb className="w-12 h-12 mx-auto" />
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Our Values</h3>

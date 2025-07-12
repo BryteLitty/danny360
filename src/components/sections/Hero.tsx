@@ -9,17 +9,17 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen w-full overflow-hidden bg-black">
       {/* Elegant Background */}
       <div className="absolute inset-0">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-900/15 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-800/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-orange-900/5 rounded-full blur-3xl"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-red-900/15 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-red-800/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-red-900/5 rounded-full blur-3xl"></div>
       </div>
 
       {/* Floating Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
-        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-orange-600 rounded-full animate-pulse delay-1000"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-1.5 h-1.5 bg-orange-400 rounded-full animate-pulse delay-2000"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-2 h-2 bg-orange-500 rounded-full animate-pulse delay-3000"></div>
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-red-600 rounded-full animate-pulse delay-1000"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-1.5 h-1.5 bg-red-400 rounded-full animate-pulse delay-2000"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-2 h-2 bg-red-500 rounded-full animate-pulse delay-3000"></div>
       </div>
 
       {/* Content */}
@@ -27,8 +27,8 @@ const Hero = () => {
         <div className="text-center max-w-5xl mx-auto">
           <div className="space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-orange-600/30 text-sm font-medium text-gray-300 mb-8">
-              <span className="w-2 h-2 bg-orange-500 rounded-full mr-2 animate-pulse"></span>
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-red-600/30 text-sm font-medium text-gray-300 mb-8">
+              <span className="w-2 h-2 bg-red-500 rounded-full mr-2 animate-pulse"></span>
               Now Available - Comprehensive Business Solutions
             </div>
 
@@ -38,7 +38,7 @@ const Hero = () => {
                 Welcome to
               </span>
               <br />
-              <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent">
                 Danny360
               </span>
             </h1>
@@ -46,9 +46,9 @@ const Hero = () => {
             {/* Subtitle */}
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
               Your comprehensive ecosystem for 
-              <span className="font-semibold text-orange-400"> internet solutions</span>, 
-              <span className="font-semibold text-orange-500"> innovation</span>, and 
-              <span className="font-semibold text-orange-600"> everyday business needs</span>
+              <span className="font-semibold text-red-400"> internet solutions</span>, 
+              <span className="font-semibold text-red-500"> innovation</span>, and 
+              <span className="font-semibold text-red-600"> everyday business needs</span>
             </p>
 
             {/* CTA Buttons */}
@@ -56,7 +56,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 onClick={scrollToServices}
-                className="group relative px-10 py-5 bg-orange-600 hover:bg-orange-500 text-white font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 border-2 border-orange-500 hover:border-orange-400"
+                className="group relative px-10 py-5 bg-red-600 hover:bg-red-500 text-white font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 border-2 border-red-500 hover:border-red-400"
               >
                 <span className="relative z-10 flex items-center text-lg">
                   Explore Our Services

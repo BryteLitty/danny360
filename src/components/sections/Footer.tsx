@@ -3,7 +3,7 @@ import { services } from '@/data/services'
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
   }
 
@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold text-orange-400 mb-4">Danny360</h3>
+            <h3 className="text-2xl font-bold text-red-400 mb-4">Danny360</h3>
             <p className="text-gray-300 leading-relaxed mb-6">
               Your one-stop solution for internet, innovation, and everyday business needs. 
               We bring together diverse expertise to deliver integrated solutions that drive success.
@@ -25,7 +25,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('hero')}
-                  className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-left"
+                  className="text-gray-300 hover:text-red-400 transition-colors duration-300 text-left"
                 >
                   Home
                 </button>
@@ -33,7 +33,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('about')}
-                  className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-left"
+                  className="text-gray-300 hover:text-red-400 transition-colors duration-300 text-left"
                 >
                   About
                 </button>
@@ -41,7 +41,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('services')}
-                  className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-left"
+                  className="text-gray-300 hover:text-red-400 transition-colors duration-300 text-left"
                 >
                   Services
                 </button>
@@ -49,7 +49,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('contact')}
-                  className="text-gray-300 hover:text-orange-400 transition-colors duration-300 text-left"
+                  className="text-gray-300 hover:text-red-400 transition-colors duration-300 text-left"
                 >
                   Contact
                 </button>
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('services')}
-                  className="text-orange-400 hover:text-orange-300 transition-colors duration-300 text-sm"
+                  className="text-red-400 hover:text-red-300 transition-colors duration-300 text-sm"
                 >
                   View All Services →
                 </button>
@@ -84,10 +84,10 @@ const Footer = () => {
             © {currentYear} Danny360. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-orange-400 transition-colors duration-300 text-sm">
+            <a href="#" className="text-gray-400 hover:text-red-400 transition-colors duration-300 text-sm">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-400 hover:text-orange-400 transition-colors duration-300 text-sm">
+            <a href="#" className="text-gray-400 hover:text-red-400 transition-colors duration-300 text-sm">
               Terms of Service
             </a>
           </div>
