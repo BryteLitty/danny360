@@ -2,7 +2,13 @@ import { FaGlobe, FaWifi, FaRocket, FaHeadset } from 'react-icons/fa'
 import { Button } from '../components/ui/button'
 import easyFiLogo from '../assets/images/ezay fi.png'
 
-const EasyFi = () => {
+interface FeatureCardProps {
+  icon: React.ReactNode
+  title: string
+  description: string
+}
+
+const EasyFi: React.FC = () => {
   return (
     <div className="h-screen overflow-hidden bg-[#000] text-white flex flex-col">
       {/* Hero Section */}
@@ -61,7 +67,7 @@ const EasyFi = () => {
   )
 }
 
-const FeatureCard = ({ icon, title, description }) => {
+const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
   return (
     <div className="p-4 rounded-lg bg-[#0A1A2F] border border-blue-800/50 transition-all duration-300">
       <div className="flex items-center mb-2">

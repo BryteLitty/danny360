@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { services } from '@/data/services'
+import { services, type Service } from '@/data/services'
 import { useNavigate } from 'react-router-dom'
 import { 
   FaGlobe, 
@@ -13,7 +13,7 @@ import {
 } from 'react-icons/fa'
 
 // Icon mapping
-const iconMap = {
+const iconMap: Record<string, React.ReactNode> = {
   FaGlobe: <FaGlobe className="w-full h-full" />,
   FaLink: <FaLink className="w-full h-full" />,
   FaShoppingCart: <FaShoppingCart className="w-full h-full" />,
@@ -23,13 +23,17 @@ const iconMap = {
   FaUsers: <FaUsers className="w-full h-full" />
 }
 
-const Services = ({ onServiceClick }) => {
+interface ServicesProps {
+  onServiceClick: (service: Service) => void
+}
+
+const Services: React.FC<ServicesProps> = ({ onServiceClick }) => {
   const navigate = useNavigate()
 
-  const handleServiceClick = (service) => {
+  const handleServiceClick = (service: Service) => {
     if (service.isExternal) {
       // Navigate to Easy-Fi page
-      navigate(service.externalUrl)
+      navigate(service.externalUrl!)
     } else {
       // Open modal
       onServiceClick(service)

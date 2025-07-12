@@ -1,4 +1,22 @@
-export const services = [
+export interface Service {
+  id: string
+  name: string
+  tagline: string
+  description: string
+  icon: string
+  isExternal: boolean
+  externalUrl?: string
+}
+
+export interface BrandColors {
+  primary: string
+  secondary: string
+  accent: string
+  neutral: string
+  dark: string
+}
+
+export const services: Service[] = [
   {
     id: 'easy-fi',
     name: 'Easy-Fi',
@@ -58,7 +76,7 @@ export const services = [
   }
 ]
 
-export const brandColors = {
+export const brandColors: BrandColors = {
   primary: '#f97316', // Orange
   secondary: '#000000', // Black
   accent: '#f97316', // Orange (for glows and accents)

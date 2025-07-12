@@ -1,17 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/sections/Header'
-import Hero from './components/sections/Hero'
-import About from './components/sections/About'
-import Services from './components/sections/Services'
-import Vision from './components/sections/Vision'
-import Contact from './components/sections/Contact'
-import Footer from './components/sections/Footer'
-import Modal from './components/common/Modal'
-import EasyFi from './pages/EasyFi'
+import Header from './components/sections/Header.tsx'
+import Hero from './components/sections/Hero.tsx'
+import About from './components/sections/About.tsx'
+import Services from './components/sections/Services.tsx'
+import Vision from './components/sections/Vision.tsx'
+import Contact from './components/sections/Contact.tsx'
+import Footer from './components/sections/Footer.tsx'
+import Modal from './components/common/Modal.tsx'
+import EasyFi from './pages/EasyFi.tsx'
 import { useState } from 'react'
+import { type Service } from './data/services'
 
 function App() {
-  const [selectedService, setSelectedService] = useState(null)
+  const [selectedService, setSelectedService] = useState<Service | null>(null)
 
   const closeModal = () => {
     setSelectedService(null)
